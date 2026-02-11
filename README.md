@@ -1,6 +1,6 @@
 # Task Management App
 Aplikasi Task Management - Flutter 
-Flutter sederhana untuk mengelola task harian. Aplikasi ini memungkinkan user untuk menambahkan task, menandai task sebagai selesai,
+-Flutter sederhana untuk mengelola task harian. Aplikasi ini memungkinkan user untuk menambahkan task, menandai task sebagai selesai,
 menghapus task, serta melakukan pencarian dan filter berdasarkan status task.
 
 # Cara Penggunaan
@@ -14,10 +14,10 @@ menghapus task, serta melakukan pencarian dan filter berdasarkan status task.
 
 - user bisa mencari task berdasarkan judul menggunakan kolom "Search Task"
 
-- user bisa filter task menggunakan dropdown:
-All Task: menampilkan seluruh task
-Pending: menampilkan task yang belum diselesaikan
-Completed: menampilkan task yang sudah diselesaikan
+- user bisa filter task menggunakan dropdown: 
+1. All Task: menampilkan seluruh task
+2. Pending: menampilkan task yang belum diselesaikan
+3. Completed: menampilkan task yang sudah diselesaikan
 
 # Source code Flutter - Github
 https://github.com/Safafadillah/Task_Manager_App
