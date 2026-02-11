@@ -18,10 +18,8 @@ class TaskPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            /// ===== STATISTIC CARD =====
             Row(
               children: [
-                /// Total Task Card
                 Expanded(
                   child: AnimatedContainer(
                     duration: Duration(milliseconds: 300),
@@ -48,7 +46,6 @@ class TaskPage extends StatelessWidget {
                   ),
                 ),
 
-                /// Pending Task Card
                 Expanded(
                   child: AnimatedContainer(
                     duration: Duration(milliseconds: 300),
@@ -75,7 +72,6 @@ class TaskPage extends StatelessWidget {
                   ),
                 ),
 
-                /// Completed Task Card
                 Expanded(
                   child: AnimatedContainer(
                     duration: Duration(milliseconds: 300),
@@ -106,7 +102,6 @@ class TaskPage extends StatelessWidget {
 
             SizedBox(height: 16),
 
-            /// ===== SEARCH =====
             TextField(
               onChanged: provider.setSearch,
               decoration: InputDecoration(
@@ -118,7 +113,6 @@ class TaskPage extends StatelessWidget {
 
             SizedBox(height: 12),
 
-            /// ===== FILTER & BUTTON =====
             Row(
               children: [
                 Expanded(
@@ -145,7 +139,6 @@ class TaskPage extends StatelessWidget {
 
                 SizedBox(width: 12),
 
-                /// ===== ADD TASK BUTTON =====
                 SizedBox(
                   height: 48,
                   child: ElevatedButton.icon(
@@ -176,7 +169,6 @@ class TaskPage extends StatelessWidget {
 
             SizedBox(height: 12),
 
-            /// ===== TASK LIST WITH ANIMATION =====
             Expanded(
               child: AnimatedSwitcher(
                 duration: Duration(milliseconds: 500),

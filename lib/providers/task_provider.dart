@@ -8,22 +8,22 @@ class TaskProvider extends ChangeNotifier {
 
   List<Task> get tasks {
     return _tasks.where((task) {
-      final filterMatch = _filter == 'All' ||
+      final filterMatch =
+          _filter == 'All' ||
           (_filter == 'Completed' && task.isCompleted) ||
           (_filter == 'Pending' && !task.isCompleted);
 
-      final searchMatch =
-          task.title.toLowerCase().contains(_searchQuery.toLowerCase());
+      final searchMatch = task.title.toLowerCase().contains(
+        _searchQuery.toLowerCase(),
+      );
 
       return filterMatch && searchMatch;
     }).toList();
   }
 
   int get totalTask => _tasks.length;
-  int get completedTask =>
-      _tasks.where((e) => e.isCompleted).length;
-  int get pendingTask =>
-      _tasks.where((e) => !e.isCompleted).length;
+  int get completedTask => _tasks.where((e) => e.isCompleted).length;
+  int get pendingTask => _tasks.where((e) => !e.isCompleted).length;
 
   String get filter => _filter;
 
@@ -53,7 +53,6 @@ class TaskProvider extends ChangeNotifier {
     _filter = value;
     notifyListeners();
   }
-
 
   void setSearch(String value) {
     _searchQuery = value;
