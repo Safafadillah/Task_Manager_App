@@ -1,6 +1,6 @@
 # Task Management App
 Aplikasi Task Management - Flutter 
-- Flutter sederhana untuk mengelola task harian. Aplikasi ini memungkinkan user untuk menambahkan task, menandai task sebagai selesai,
+- Aplikasi sederhana untuk mengelola task harian. Aplikasi ini memungkinkan user untuk menambahkan task, menandai task sebagai selesai,
 menghapus task, serta melakukan pencarian dan filter berdasarkan status task.
 
 # Cara Penggunaan
